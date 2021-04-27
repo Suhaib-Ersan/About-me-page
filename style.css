@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(32, 32, 32);
+  font-family: "Open Sans", "Helvetica Neue", sans-;
+  margin: 30px;
+  margin-left: 250px;
+  margin-right: 250px;
+  color: white;
+}
+
+.headerPic {
+  
+  padding: 125px;
+  text-align: center;
+  background-size: auto;
+  background-image: url(img/raphael-lacoste-boat-web.jpg);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-size: cover;
+
+  /* margin-right: 250px;
+  margin-left: 250px; */
+  box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.introSection span {
+display: inline-block;
+}
+
+#headerTitle {
+  
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+}
+
+#headerName {
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: -50px;
+}
+
+/* #greetingSpace{
+  margin-top: 50px;
+  text-align: center;
+  font-size: ;
+} */
