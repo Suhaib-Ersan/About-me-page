@@ -12,7 +12,7 @@ body {
   padding: 125px;
   text-align: center;
   background-size: auto;
-  background-image: url('img/raphael-lacoste-boat-web.jpg');
+  background-image: url('../img/raphael-lacoste-boat-web.jpg');
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-size: cover;
@@ -22,20 +22,29 @@ body {
   box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.introSection span {
+.introSection h1 {
+  padding: 50px 0px 50px 0px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.introSection span p{
 display: inline-block;
 }
 
 #headerTitle {
-  
+  opacity: 88%;
+  font-weight: bold;
   font-size: 72px;
   color: rgb(255, 255, 255);
 }
 
 #headerName {
-  color: aliceblue;
+  opacity: 88%;
+  font-weight: lighter;
   font-size: 20px;
   margin-top: 5px;
+  color: rgb(255, 255, 255);
 }
 
 /* #greetingSpace{

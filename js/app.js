@@ -1,70 +1,89 @@
-alert(hello)
+'use strict';
+let greeting;
+let today = new Date();
+let hourNow = today.getHours();
 {
-  let greeting;
-  let today = new Date();
-  yes;
-  let hourNow = today.getHours();
-  yes;
-
   if (hourNow > 18) {
-    greeting = "Good evening";
+    greeting = 'Good evening';
   } else if (hourNow > 12) {
-    greeting = "Good afternoon";
+    greeting = 'Good afternoon';
   } else if (hourNow > 0) {
-    greeting = "Good morning";
+    greeting = 'Good morning';
   } else {
-    greeting = "Welcome";
+    greeting = 'Welcome';
   }
 
-  let choosenGreeting = document.getElementById("greetingText");
+  let choosenGreeting = document.getElementById('greetingText');
   choosenGreeting.innerHTML = greeting;
 }
 
-{
-  let userName = prompt("What's your name?");
-  let userNameToHtml = document.getElementById("userNameText");
-  userNameToHtml.innerHTML = userName;
+function lowerCaseAllAndCapitalizeFirstLetter(string1) {
+  return (
+    string1.toLowerCase(), string1.charAt(0).toUpperCase() + string1.slice(1)
+  );
 }
 
 {
-  let knowYarmoukQ = prompt("Do you know a university by the name of Yarmouk?");
+    let userName = prompt('What\'s your name?');
+    let userNameToHtml = document.getElementById('userNameText');
+    userNameToHtml.innerHTML = userName;
+}
 
-  switch (knowYarmoukQ.toLowerCase) {
-    case "yes":
-    case "y":
+let knowYarmoukQ = prompt('Do you know a university by the name of Yarmouk?');
+{
+  switch (knowYarmoukQ.toLowerCase()) {
+    case 'yes':
+    case 'y':
       {
-        let yesText =
-          "it's a well known university, so it's not weird you've heard of it";
-        let yesTextToHtml = document.getElementById("knowYarmoukText");
-        yesTextToHtml.innerHTML = yesText;
+        let knowYarmoukQyesText =
+          'it\'s a well known university, so it\'s not weird you\'ve heard of it';
+        let knowYarmoukQyesTextToHtml = document.getElementById('knowYarmoukText');
+        knowYarmoukQyesTextToHtml.innerHTML = knowYarmoukQyesText;
       }
       break;
-    case "no":
-    case "n": {
-      let noText = "too bad you've never heard of it";
-      let noTextToHtml = document.getElementById("knowYarmoukText");
-      noTextToHtml.innerHTML = noTextToHtml;
-    }
+    case 'no':
+    case 'n':
+      {
+        let knowYarmoukQnoText = 'too bad you\'ve never heard of it';
+        let knowYarmoukQnoTextToHtml = document.getElementById('knowYarmoukText');
+        knowYarmoukQnoTextToHtml.innerHTML = knowYarmoukQnoText;
+      }
+      break;
+    default:
+      {
+        let knowYarmoukQdefaultText = 'it\'s a well known university';
+        let knowYarmoukQdefaultTextToHtml = document.getElementById('knowYarmoukText');
+        knowYarmoukQdefaultTextToHtml.innerHTML = knowYarmoukQdefaultText;
+      }
+      break;
   }
 }
 
+let likeMansafQ = prompt('Do you like mansaf?').toLowerCase();
+console.log('likeMansafQ = ' + likeMansafQ);
 {
-  let likeMansafQ = prompt("Do you like mansaf?");
-
-  switch (likeMansafQ.toLowerCase) {
-    case "yes":
-    case "y":
+  switch (likeMansafQ) {
+    case 'yes':
+    case 'y':
       {
-        let yesText = "what a coincidence, I also like mansaf!";
-        let yesTextToHtml = document.getElementById("mansafPreferenceText");
-        yesTextToHtml.innerHTML = yesText;
+        let likeMansafQyesText = 'what a coincidence, I also like mansaf!';
+        let likeMansafQyesTextToHtml = document.getElementById('mansafPreferenceText');
+        likeMansafQyesTextToHtml.innerHTML = likeMansafQyesText;
       }
       break;
-    case "no":
-    case "n": {
-      let noText = "you don't like mansaf? you're one of a kind!";
-      let noTextToHtml = document.getElementById("mansafPreferenceText");
-      noTextToHtml.innerHTML = noTextToHtml;
+    case 'no':
+    case 'n':
+      {
+        let likeMansafQnoText = 'you don\'t like mansaf? you\'re one of a kind!';
+        let likeMansafQnoTextToHtml = document.getElementById('mansafPreferenceText');
+        likeMansafQnoTextToHtml.innerHTML = likeMansafQnoText;
+      }
+      break;
+    default: {
+      let mansafy = 'mansaf is pretty good!';
+      console.log(mansafy);
+      document.getElementById('mansafPreferenceText').innerHTML = mansafy;
+      // yesTextToHtml.innerHTML = yesText;
     }
   }
 }
