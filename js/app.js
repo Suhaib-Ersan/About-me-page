@@ -1,4 +1,4 @@
-let mansafQuestion = prompt('Do you like mansaf?').toLowerCase;
+// let mansafQuestion = prompt('Do you like mansaf?').toLowerCase;
 
 function askMansafQuestion (answer) {switch (mansafQuestion) {
 case 'yes':

@@ -12,7 +12,7 @@ body {
   padding: 125px;
   text-align: center;
   background-size: auto;
-  background-image: url(img/raphael-lacoste-boat-web.jpg);
+  background-image: url('img/raphael-lacoste-boat-web.jpg');
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-size: cover;
@@ -35,7 +35,7 @@ display: inline-block;
 #headerName {
   color: aliceblue;
   font-size: 20px;
-  margin-top: -50px;
+  margin-top: 5px;
 }
 
 /* #greetingSpace{
