@@ -1,21 +1,6 @@
-'use strict';
-let greeting;
-let today = new Date();
-let hourNow = today.getHours();
-{
-  if (hourNow > 18) {
-    greeting = 'Good evening';
-  } else if (hourNow > 12) {
-    greeting = 'Good afternoon';
-  } else if (hourNow > 0) {
-    greeting = 'Good morning';
-  } else {
-    greeting = 'Welcome';
-  }
+"use strict";
 
-  let choosenGreeting = document.getElementById('greetingText');
-  choosenGreeting.innerHTML = greeting;
-}
+
 
 function lowerCaseAllAndCapitalizeFirstLetter(string1) {
   return (
@@ -24,65 +9,101 @@ function lowerCaseAllAndCapitalizeFirstLetter(string1) {
 }
 
 {
-    let userName = prompt('What\'s your name?');
-    let userNameToHtml = document.getElementById('userNameText');
-    userNameToHtml.innerHTML = userName;
+  let greeting;
+  let today = new Date();
+  let hourNow = today.getHours();
+  {
+    if (hourNow > 18) {
+      greeting = "Good evening";
+    } else if (hourNow > 12) {
+      greeting = "Good afternoon";
+    } else if (hourNow > 0) {
+      greeting = "Good morning";
+    } else {
+      greeting = "Welcome";
+    }
+
+    let choosenGreeting = document.getElementById("greetingText");
+    choosenGreeting.innerHTML = greeting;
+  }
 }
 
-let knowYarmoukQ = prompt('Do you know a university by the name of Yarmouk?');
+{
+  let userName = prompt("What's your name?");
+
+  if (userName) {
+    let userNameToHtml = document.getElementById("userNameText");
+    userNameToHtml.innerHTML = lowerCaseAllAndCapitalizeFirstLetter(userName);
+  } else {
+    let userNameToHtml = document.getElementById("userNameText");
+    userNameToHtml.innerHTML = "person of earth";
+  }
+}
+
+let knowYarmoukQ = prompt("Do you know a university by the name of Yarmouk?");
 {
   switch (knowYarmoukQ.toLowerCase()) {
-    case 'yes':
-    case 'y':
+    case "yes":
+    case "y":
       {
         let knowYarmoukQyesText =
-          'it\'s a well known university, so it\'s not weird you\'ve heard of it';
-        let knowYarmoukQyesTextToHtml = document.getElementById('knowYarmoukText');
+          "it's a well known university, so it's not weird you've heard of it";
+        let knowYarmoukQyesTextToHtml = document.getElementById(
+          "knowYarmoukText"
+        );
         knowYarmoukQyesTextToHtml.innerHTML = knowYarmoukQyesText;
       }
       break;
-    case 'no':
-    case 'n':
+    case "no":
+    case "n":
       {
-        let knowYarmoukQnoText = 'too bad you\'ve never heard of it';
-        let knowYarmoukQnoTextToHtml = document.getElementById('knowYarmoukText');
+        let knowYarmoukQnoText = "too bad you've never heard of it";
+        let knowYarmoukQnoTextToHtml = document.getElementById(
+          "knowYarmoukText"
+        );
         knowYarmoukQnoTextToHtml.innerHTML = knowYarmoukQnoText;
       }
       break;
     default:
       {
-        let knowYarmoukQdefaultText = 'it\'s a well known university';
-        let knowYarmoukQdefaultTextToHtml = document.getElementById('knowYarmoukText');
+        let knowYarmoukQdefaultText = "it's a well known university";
+        let knowYarmoukQdefaultTextToHtml = document.getElementById(
+          "knowYarmoukText"
+        );
         knowYarmoukQdefaultTextToHtml.innerHTML = knowYarmoukQdefaultText;
       }
       break;
   }
 }
 
-let likeMansafQ = prompt('Do you like mansaf?').toLowerCase();
-console.log('likeMansafQ = ' + likeMansafQ);
+let likeMansafQ = prompt("Do you like mansaf?").toLowerCase();
+console.log("likeMansafQ = " + likeMansafQ);
 {
   switch (likeMansafQ) {
-    case 'yes':
-    case 'y':
+    case "yes":
+    case "y":
       {
-        let likeMansafQyesText = 'what a coincidence, I also like mansaf!';
-        let likeMansafQyesTextToHtml = document.getElementById('mansafPreferenceText');
+        let likeMansafQyesText = "what a coincidence, I also like mansaf!";
+        let likeMansafQyesTextToHtml = document.getElementById(
+          "mansafPreferenceText"
+        );
         likeMansafQyesTextToHtml.innerHTML = likeMansafQyesText;
       }
       break;
-    case 'no':
-    case 'n':
+    case "no":
+    case "n":
       {
-        let likeMansafQnoText = 'you don\'t like mansaf? you\'re one of a kind!';
-        let likeMansafQnoTextToHtml = document.getElementById('mansafPreferenceText');
+        let likeMansafQnoText = "you don't like mansaf? you're one of a kind!";
+        let likeMansafQnoTextToHtml = document.getElementById(
+          "mansafPreferenceText"
+        );
         likeMansafQnoTextToHtml.innerHTML = likeMansafQnoText;
       }
       break;
     default: {
-      let mansafy = 'mansaf is pretty good!';
+      let mansafy = "mansaf is pretty good!";
       console.log(mansafy);
-      document.getElementById('mansafPreferenceText').innerHTML = mansafy;
+      document.getElementById("mansafPreferenceText").innerHTML = mansafy;
       // yesTextToHtml.innerHTML = yesText;
     }
   }
