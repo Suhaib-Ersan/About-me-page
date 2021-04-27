@@ -1,19 +1,30 @@
-mansafQuestion = prompt('Do you like mansaf?').toLocaleLowerCase;
+let mansafQuestion = prompt('Do you like mansaf?').toLowerCase;
 
-switch (mansafQuestion) {
-    case 'yes':
-    case 'y':
-        let alsoLikeMansaf = 'what a coincidence, I also like mansaf!';
-        let mansafQuestionYes = document.getElementById("mansafPreference");
-        mansafQuestionYes.innerHTML = alsoLikeMansaf;
-    break;
-    case 'no':
-        case 'n':
-};
+function askMansafQuestion (answer) {switch (mansafQuestion) {
+case 'yes':
+case 'y': {
+  let LikeMansafOrNot = 'what a coincidence, I also like mansaf!';
+  let mansafQuestionYes = document.getElementById('mansafPreference');
+  mansafQuestionYes.innerHTML = LikeMansafOrNot;
+}
+  break;
+case 'no':
+case 'n': {
+  let LikeMansafOrNot = 'you don\'t like mansaf? you\'re one of a kind!';
+  let mansafQuestionYes = document.getElementById('mansafPreference');
+  mansafQuestionYes.innerHTML = LikeMansafOrNot;
+}
+}
+}
+
+askMansafQuestion(mansafQuestion);
+
+
+
 
 // {
 //     var greeting;
-//     var today = new Date();
+//     var today = new Date();yes
 //     var hourNow = today.getHours();yes
 
 //     if (hourNow > 18) {
