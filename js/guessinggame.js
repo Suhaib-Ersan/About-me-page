@@ -5,12 +5,12 @@ function knowYarmoukQFunction() {
     case "yes":
     case "y":
       {
-        let knowYarmoukQyesText =
-          "Did I study at a university by the name of Yarmouk?\nYou answered: yes, which is correct!";
-        let knowYarmoukQyesTextToHtml = document.getElementById(
-          "knowYarmoukText"
+        let Question ="Did I study at a university by the name of Yarmouk?";
+        let QuestionToHtml = document.getElementById(
+          "Q1"
         );
-        knowYarmoukQyesTextToHtml.innerHTML = knowYarmoukQyesText;
+        QuestionToHtml.innerHTML = Question;
+        
         alert("that's correct");
       }
       break;
@@ -22,6 +22,7 @@ function knowYarmoukQFunction() {
           "knowYarmoukText"
         );
         knowYarmoukQnoTextToHtml.innerHTML = knowYarmoukQnoText;
+        alert("that's wrong");
       }
       break;
     default:
@@ -57,6 +58,7 @@ function likeMansafFunction() {
           "mansafPreferenceText"
         );
         likeMansafQnoTextToHtml.innerHTML = likeMansafQnoText;
+        alert("that's wrong");
       }
       break;
     default: {
@@ -73,5 +75,5 @@ let knowYarmoukQ = prompt(
 );
 knowYarmoukQFunction(knowYarmoukQ);
 
-let likeMansafQ = prompt("Do you like mansaf?").toLowerCase();
+let likeMansafQ = prompt("Do I like mansaf?").toLowerCase();
 likeMansafFunction(likeMansafQ);

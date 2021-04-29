@@ -32,11 +32,15 @@ ol li {
 }
 
 .questionsOnPage {
-  color: rgba(255, 255, 255, 0.301);
+  color: rgb(102, 102, 102);
   font-style: italic;
 }
 
 .questionsOnPageAnswers {
+}
+
+.correctAOrNot {
+  color: rgb(230, 39, 80);
 }
 
 .headerPic {
