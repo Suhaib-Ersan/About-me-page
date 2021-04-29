@@ -31,7 +31,7 @@ ol li {
   padding-left: 12px;
 }
 
-.questionsOnPage {
+.youAnsweredClass {
   color: rgb(102, 102, 102);
   font-style: italic;
 }
@@ -40,7 +40,8 @@ ol li {
 }
 
 .correctAOrNot {
-  color: rgb(230, 39, 80);
+  color: #e02a51;
+  color: #1ee270;
 }
 
 .headerPic {
@@ -69,6 +70,7 @@ ol li {
 .introSection span p {
   display: inline-block;
 }
+
 
 #headerTitle {
   opacity: 88%;
@@ -141,6 +143,7 @@ footer {
   padding: 50px 0 50px 0;
   margin: 0;
 }
+
 
 /* #greetingSpace{
   margin-top: 50px;
