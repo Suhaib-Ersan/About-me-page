@@ -1,14 +1,12 @@
 "use strict";
 
-
-
 function lowerCaseAllAndCapitalizeFirstLetter(string1) {
   return (
     string1.toLowerCase(), string1.charAt(0).toUpperCase() + string1.slice(1)
   );
 }
 
-{
+function greetingFunction() {
   let greeting;
   let today = new Date();
   let hourNow = today.getHours();
@@ -22,26 +20,23 @@ function lowerCaseAllAndCapitalizeFirstLetter(string1) {
     } else {
       greeting = "Welcome";
     }
-
-    let choosenGreeting = document.getElementById("greetingText");
-    choosenGreeting.innerHTML = greeting;
+    return greeting;
   }
 }
 
-{
-  let userName = prompt("What's your name?");
-
-  if (userName) {
-    let userNameToHtml = document.getElementById("userNameText");
-    userNameToHtml.innerHTML = lowerCaseAllAndCapitalizeFirstLetter(userName);
-  } else {
-    let userNameToHtml = document.getElementById("userNameText");
-    userNameToHtml.innerHTML = "person of earth";
+function userNameFunction(userName) {
+  {
+    if (userName) {
+      let userNameToHtml = document.getElementById("userNameText");
+      userNameToHtml.innerHTML = lowerCaseAllAndCapitalizeFirstLetter(userName);
+    } else {
+      let userNameToHtml = document.getElementById("userNameText");
+      userNameToHtml.innerHTML = "person of earth";
+    }
   }
 }
 
-let knowYarmoukQ = prompt("Do you know a university by the name of Yarmouk?");
-{
+function knowYarmoukQFunction() {
   switch (knowYarmoukQ.toLowerCase()) {
     case "yes":
     case "y":
@@ -75,6 +70,15 @@ let knowYarmoukQ = prompt("Do you know a university by the name of Yarmouk?");
       break;
   }
 }
+
+let userNamePrompt = prompt("What's your name?");
+userNameFunction(userNamePrompt);
+
+let choosenGreeting = document.getElementById("greetingText");
+choosenGreeting.innerHTML = greetingFunction();
+
+let knowYarmoukQ = prompt("Do you know a university by the name of Yarmouk?");
+knowYarmoukQFunction(knowYarmoukQ);
 
 let likeMansafQ = prompt("Do you like mansaf?").toLowerCase();
 console.log("likeMansafQ = " + likeMansafQ);
