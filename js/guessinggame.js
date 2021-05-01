@@ -45,8 +45,8 @@ if (userNamePrompt === "null") {
   let favSeasonA = "";
   arrayCheck(favSeasonArray, "Q7", "A7", "correctOrNot7", favSeasonQ, favSeasonA, favSeasonArray[3]);
 
-  alert("You got " + scoreCount + " out of 7");
-  document.getElementById("scoreCountHtml").innerHTML = scoreCount + " / 7";
+  alert('You got ' + scoreCount + ' out of 7');
+  document.getElementById("scoreCountHtml").innerHTML = 'Your score is &nbsp;' + scoreCount + ' / 7';
 
   alert("You finished the questions, " + userNamePrompt, '!');
 
